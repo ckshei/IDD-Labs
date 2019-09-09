@@ -2,7 +2,6 @@
 
 * [Initial page](README.md)
 * [Light It Up](lab-01.md)
-* [Light It Up](light-it-up.md)
 * [Make a Digital Timer!](lab-02.md)
 * [Data Logger \(and using cool sensors!\)](lab-03.md)
 * [Paper Puppets](lab-04.md)
