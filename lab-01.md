@@ -12,7 +12,7 @@ C\) [Blink a LED using the Arduino](lab-01.md#part-c-blink-a-led-using-arduino)
 
 D\) [Manually fade a LED](lab-01.md#part-d-manually-fade-a-led)
 
-E\) [Fade a LED using Arduino](lab-01.md#part-e-fade-a-led-using-arduino)
+E\) [Fade a LED using Arduino](lab-01.md#part-e-fade-a-led-using-arduino) ****
 
 F\) [Frankenlight](lab-01.md#part-f-frankenlight)
 
@@ -90,9 +90,13 @@ Now modify the circuit and program so that you can blink an external LED on pin 
 
 Set up the following circuit, and try making the LED glow brighter and dimmer.
 
-![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/led_pot_schematic.png)
+![](.gitbook/assets/image%20%283%29.png)
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
+
+Yes I was able to get the LED to glow the whole turning range of the potentiometer. The max and min voltage resulting from the increase/decrease of resistance was still within the range of acceptable voltage's for the diode. 
+
+\(i.e. the min of the potentiometer still provided a voltage greater than the forward voltage rating of the diode, and the max voltage was still within the acceptable range of voltage that the diode can accept\). 
 
 ## Part E. Fade a LED using Arduino
 
@@ -104,8 +108,6 @@ The percentage of time that the LED is on \(called the duty cycle\) controls its
 
 Update your circuit so the jumper wire connects to pin 11. \(To control an LED using PWM, you have to connect it to one of the pins that supports PWM \(not all do!\).
 
-![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_fade_schematic.png)
-
 Here's a [hint diagram](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_fade.png) if you need it.
 
 On your computer, in the Arduino IDE, open the Fade sketch \(File &gt; Examples &gt; 01.Basics &gt; Fade \).
@@ -114,23 +116,37 @@ Look at the code.
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
 
+I had to modify the int `led` to be pin 11. 
+
 **b. What is analogWrite\(\)? How is that different than digitalWrite\(\)?**
 
-Now upload your sketch and check that the LED fades on and off. Try changing a few parameters to make your own funky lighting pattern.
+analogWrite can vary the voltage to a continuous range, while digitalWrite can only set two states, High and Low.
 
 ## Part F. FRANKENLIGHT!!!
 
 For this part of lab, you get to hack apart an existing electronic device.
 
+Hacking an Amazon Echo Remote
+
 ### 1. Take apart your electronic device, and draw a schematic of what is inside.
+
+![](.gitbook/assets/image%20%284%29.png)
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
 
+Yes there is a computation happening inside the computer. Most likely the microcontroller does some computation to handle different button presses as well as handling the audio sensed so that it can send the correct instructions over bluetooth to the speaker.
+
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
+
+Yes, there is an audio sensor on the device. Any audio that is picked up is probably saved on the microcontroller and sent over to the speaker by bluetooth. Information is sent to different portions of the device through varying the voltage, current, and time being transmitted.
 
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
 
+The device is powered by two 1.5v batteries in series, thus a total of 3V. It doesn't look like there are any transformation or regulation of power \(outside of what is necessary to send information\), although this can be done with a level converter or a voltage divider.
+
 **d. Is information stored in your device? Where? How?**
+
+I assume some information is stored on the device, at the minimum the audio which is sensed should be stored temporarily while it is being transmitted to the bluetooth receiver. I would assume the information is being stored on the main microcontroller.
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
@@ -138,7 +154,9 @@ For this part of lab, you get to hack apart an existing electronic device.
 
 ### 3. Build your light!
 
-We have perfboards in the lab, which provide a handy way to connect your parts. You may want to make your light using passive components \(such as switches, resistors or potentiometers\) rather than your microcontroller \(also known as a μC\), unless you think of a nice way to incorporate the μC into your design without soldering it inside of a light. \(You'll need it back for future labs and projects!\) If your design does require a μC, perhaps you can run a lead from your breadboard to the main light, although you'll lose portability that way. Clever use of components is encouraged!
+Video: [https://youtu.be/QJn0c6poGeI](https://youtu.be/QJn0c6poGeI)
+
+Really I just hacked into the positive and negative terminals and used the battery to charge my breadboard. 
 
 **Make a video showing off your Frankenlight.**
 
