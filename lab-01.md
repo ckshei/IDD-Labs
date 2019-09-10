@@ -74,6 +74,8 @@ If I wanted to prove to myself the LED was actually blinking, I could include so
 
 **e. Modify the code to make your LED blink** _**your way**_**. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
+Code: https://github.com/ckshei/IDD-Labs/blob/master/lab-1/Custom_Blink.ino
+
 ![](.gitbook/assets/image%20%281%29.png)
 
 ### 2. Blink your LED
