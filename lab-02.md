@@ -72,6 +72,8 @@ Incorporate the LCD into your fading LED/potentiometer code so that you can read
 
 **e. Include a copy of your Lowly Multimeter code in your lab write-up**
 
+**Code:** [**https://github.com/ckshei/IDD-Labs/blob/master/lab-2/multimeter.ino**](https://github.com/ckshei/IDD-Labs/blob/master/lab-2/multimeter.ino)\*\*\*\*
+
 ![](.gitbook/assets/image%20%285%29.png)
 
 Leave your LCD set up for the rest of Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
@@ -139,6 +141,8 @@ You should be able to draw upon awesome ideas you generated for the PreLab.
 Note that for some of you, the time may seem to be decremented by 10 each second \(that is, from 670=&gt;660\). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs. 99 is written to the screen, and ask an instructor.
 
 **a. Make a short video showing how your timer works, and what happens when time is up!**
+
+**Code:** [**https://github.com/ckshei/IDD-Labs/blob/master/lab-2/digital\_timer.ino**](https://github.com/ckshei/IDD-Labs/blob/master/lab-2/digital_timer.ino)\*\*\*\*
 
 {% embed url="https://youtu.be/BiZTWTWe8jg" %}
 
