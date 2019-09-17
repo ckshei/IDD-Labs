@@ -34,7 +34,11 @@ Let's start with the "Display" program, which just flashes "Hello World!" These 
 
 **a. What voltage level do you need to power your display?**
 
+5 volts to power the display. When I unplugged the 5 volt, only the backlight showed.
+
 **b. What voltage level do you need to power the display backlight?**
+
+3.3 volts to power the display backlight. When I unplugged the 3.3 V the backlight disappeared. 
 
 ![](https://cdn-shop.adafruit.com/1200x900/181-03.jpg)
 
@@ -52,17 +56,23 @@ The 10K pot connected to Vo on the LCD adjusts the contrast, so try adjusting th
 
 LCD pin 15 and 16 \(LED+, LED-\) are designed for background lighting. If you feel the whole screen too dark, you may try to connect pin15\(LED+\) to +3V or +3.3V and pin16\(LED-\) to ground. **Don't connect pin15\(LED+\) to +5V as it may burn background light!**
 
-Do try to set this up before peeking at this [diagram](https://github.com/ckshei/IDD-Labs/tree/d81e66e08418701349e80378515660d5cb78c06a/images/lcd_arduino_diagram.png).
+Do try to set this up before peeking at this diagram.
 
 **c. What was one mistake you made when wiring up the display? How did you fix it?**
 
+I actually didn't make any mistakes \(perhaps I was very lucky\), although quite a few people forgot to wire the power rails together. To fix it, it is as easy as connecting the two vertical power rails. 
+
 **d. What line of code do you need to change to make it flash your name instead of "Hello World"?**
+
+lcd.print\("hello, world!"\); **-&gt;** lcd.print\("Chris Shei!"\);
 
 Try a few of the other examples in the folder to get a feel for the capabilities of your LCD. There is a list of all the possible functions at the [Arduino LiquidCrystal Library](http://arduino.cc/en/Reference/LiquidCrystal?from=Tutorial.LCDLibrary).
 
 Incorporate the LCD into your fading LED/potentiometer code so that you can read out the exact analog value that you are reading in on Analog Pin 0. It's your own lowly multimeter!
 
-**e. Include a copy of your Lowly Multimeter code in your lab write-up.**
+**e. Include a copy of your Lowly Multimeter code in your lab write-up**
+
+![](.gitbook/assets/image%20%285%29.png)
 
 Leave your LCD set up for the rest of Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
 
@@ -96,6 +106,8 @@ Wire it to your circuit with the black to ground and the red to Arduino Micro pi
 
 **a. How would you change the code to make the song play twice as fast?**
 
+Double the note durations array. \(4th note is quarter, 8th note is eighth note, my little musical theory background tells me the bigger the integer, the quicker it plays\).
+
 Now change the speed back, and replace the melody\[\] and noteDurations\[\] arrays with the following:
 
 ```cpp
@@ -116,6 +128,8 @@ You'll also have to increase the for\(\) loop index max from 8 to 20:
 
 **b. What song is playing?**
 
+Star Wars \(maybe the empire strikes back? I'm terrible at pop culture\).
+
 ## Part E. Make your own timer
 
 Make a timer that uses any of the input devices to set a time, and then automatically \(or manually, if you prefer\) begin counting down, displaying the time left. Make your timer show an alert once the time is up with one of the output devices we connected during this lab, or you have available. \(Hint: the sample code for [Examples-&gt;LiquidCrystal-&gt;HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...\)
@@ -125,6 +139,10 @@ You should be able to draw upon awesome ideas you generated for the PreLab.
 Note that for some of you, the time may seem to be decremented by 10 each second \(that is, from 670=&gt;660\). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs. 99 is written to the screen, and ask an instructor.
 
 **a. Make a short video showing how your timer works, and what happens when time is up!**
+
+{% embed url="https://youtu.be/BiZTWTWe8jg" %}
+
+One button increments the counter, the other starts the timer. Once the timer is up, the LED button lights up.
 
 **b. Post a link to the completed lab report your GitHub repo.**
 
