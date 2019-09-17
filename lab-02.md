@@ -140,5 +140,9 @@ Note that for some of you, the time may seem to be decremented by 10 each second
 
 **a. Make a short video showing how your timer works, and what happens when time is up!**
 
+{% embed url="https://youtu.be/BiZTWTWe8jg" %}
+
+One button increments the counter, the other starts the timer. Once the timer is up, the LED button lights up.
+
 **b. Post a link to the completed lab report your GitHub repo.**
 
