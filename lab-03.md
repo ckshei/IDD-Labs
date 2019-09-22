@@ -62,7 +62,9 @@ photocell + force sensor - log
 
 **Take a picture of your screen working insert it here!**
 
-![](.gitbook/assets/image%20%282%29.png)
+![](.gitbook/assets/image%20%283%29.png)
+
+![](.gitbook/assets/image%20%284%29.png)
 
 ## Part D. Logging values to the EEPROM and reading them back
 

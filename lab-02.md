@@ -74,7 +74,7 @@ Incorporate the LCD into your fading LED/potentiometer code so that you can read
 
 **Code:** [**https://github.com/ckshei/IDD-Labs/blob/master/lab-2/multimeter.ino**](https://github.com/ckshei/IDD-Labs/blob/master/lab-2/multimeter.ino)\*\*\*\*
 
-![](.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image%20%288%29.png)
 
 Leave your LCD set up for the rest of Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
 
