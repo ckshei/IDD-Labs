@@ -96,6 +96,8 @@ What is going on in this circuit? The Phase A and Phase B pins actually behave l
 
 Use [this rotary encoder code](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Rotary-Encoder-test-Code) to see if you have hooked the encoder up correctly! You should see data coming in on the serial monitor -- which you can open by clicking on the magnifying glass icon in the upper-right corner of the Arduino window \(or by going to `Tools` &gt; `Serial Monitor` in the menu\).
 
+[https://youtu.be/E2xPcle21wE](https://youtu.be/E2xPcle21wE)
+
 ## Part D. Make your Arduino sing!
 
 Let's make the Arduino make some noise! We are going to start with the Tone example program:
