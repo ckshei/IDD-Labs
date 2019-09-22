@@ -12,11 +12,17 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 **a. Based on the readings from the serial monitor, what is the range of the analog values being read?**
 
+0-1023
+
 **b. How many bits of resolution does the analog to digital converter \(ADC\) on the Arduino have?**
+
+10
 
 ## Part B. RGB LED
 
 **How might you use this with only the parts in your kit? Show us your solution.**
+
+\*\*\*\*[**https://www.youtube.com/watch?v=Y-iwOcFzKBo**](https://www.youtube.com/watch?v=Y-iwOcFzKBo)\*\*\*\*
 
 ## Part C. Voltage Varying Sensors
 
@@ -24,11 +30,11 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 **a. What voltage values do you see from your force sensor?**
 
-0 - 1023
+0 - 1023 bits so about 0-5V.
 
 **b. What kind of relationship does the voltage have as a function of the force applied? \(e.g., linear?\)**
 
-It does seem linear
+It does seem logarithmic
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
@@ -36,17 +42,19 @@ Yes, you need to set up the input pin as pin A0, and then calculate the brightne
 
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
+Soft Pot - 20k, flex sensor + photo cell - 10k 
+
 **e. What kind of relationship does the resistance have as a function of stimulus? \(e.g., linear?\)**
+
+soft pot + flex sensor - linear
+
+photocell + force sensor - log 
 
 ### 2. Accelerometer
 
 **a. Include your accelerometer read-out code in your write-up.**
 
-### 3. IR Proximity Sensor
-
-**a. Describe the voltage change over the sensing range of the sensor. A sketch of voltage vs. distance would work also. Does it match up with what you expect from the datasheet?**
-
-**b. Upload your merged code to your lab report repository and link to it here.**
+\*\*\*\*
 
 ## Optional. Graphic Display
 
