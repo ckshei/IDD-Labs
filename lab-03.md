@@ -38,11 +38,13 @@ It does seem logarithmic
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
-Yes, you need to set up the input pin as pin A0, and then calculate the brightness. You could also map the voltages to the output voltages from the LED \(e.g. 1-1023 to 0-255\), or specifically find the voltage where the LED does light up \(maybe 80 or something, and then map it from 80-255\). 
+Yes, you need to set up the input pin as pin A0, and then calculate the brightness. You could also map the voltages to the output voltages from the LED \(e.g. 1-1023 to 0-255\), or specifically find the voltage where the LED does light up \(around 60 or some, and thus map from 60-255\). 
 
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
-Soft Pot - 20k, flex sensor + photo cell - 10k 
+Soft Pot - 20k
+
+flex sensor + photo cell - 10k 
 
 **e. What kind of relationship does the resistance have as a function of stimulus? \(e.g., linear?\)**
 
@@ -66,21 +68,35 @@ photocell + force sensor - log
 
 ![](.gitbook/assets/image%20%284%29.png)
 
+Code: [https://github.com/ckshei/IDD-Labs/blob/master/lab-3/LED\_DIsplay.ino](https://github.com/ckshei/IDD-Labs/blob/master/lab-3/LED_DIsplay.ino)
+
 ## Part D. Logging values to the EEPROM and reading them back
 
 ### 1. Reading and writing values to the Arduino EEPROM
 
 **a. Does it matter what actions are assigned to which state? Why?**
 
+
+
 **b. Why is the code here all in the setup\(\) functions and not in the loop\(\) functions?**
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
+1024 \(EEPROM Size\)
+
 **d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
+
+You could map the analog data to 0-255.
+
+
 
 **e. Alternately, how would we store the data if it were bigger than a byte? \(hint: take a look at the** [**EEPROMPut**](https://www.arduino.cc/en/Reference/EEPROMPut) **example\)**
 
 **Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**
+
+{% embed url="https://youtu.be/ubDzC9D-o1s" %}
+
+\*\*\*\*[**https://github.com/ckshei/IDD-Labs/tree/master/lab-3/SwitchState2**](https://github.com/ckshei/IDD-Labs/tree/master/lab-3/SwitchState2)\*\*\*\*
 
 ### 2. Design your logger
 
