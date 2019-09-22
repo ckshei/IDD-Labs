@@ -76,19 +76,25 @@ Code: [https://github.com/ckshei/IDD-Labs/blob/master/lab-3/LED\_DIsplay.ino](ht
 
 **a. Does it matter what actions are assigned to which state? Why?**
 
+Yes, the way we have it coded, there is no way to go from state 0 to state 2, and vice versa. 
 
+![](.gitbook/assets/image%20%2810%29.png)
+
+So it wouldn't make much sense if we were to make read and write on opposite ends \(i.e. State 1, and State 3\) because the middle state would be clear and we would always be clearing any data we wrote and would not be able to read it.
 
 **b. Why is the code here all in the setup\(\) functions and not in the loop\(\) functions?**
+
+We want our code to run per state change \(i.e. when the potentiometer turns\) rather than constantly in the background. I suspect it could even cause issues if we kept running the read, write, and clear code so often. 
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
 1024 \(EEPROM Size\)
 
+Atmega328 has 1024 bytes. 
+
 **d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
 
-You could map the analog data to 0-255.
-
-
+You could map the analog data to 0-255, or you could create some sort of data structure that splits up the data into different memory addresses, and reads it back. 
 
 **e. Alternately, how would we store the data if it were bigger than a byte? \(hint: take a look at the** [**EEPROMPut**](https://www.arduino.cc/en/Reference/EEPROMPut) **example\)**
 
