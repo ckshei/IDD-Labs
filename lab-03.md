@@ -98,6 +98,8 @@ You could map the analog data to 0-255, or you could create some sort of data st
 
 **e. Alternately, how would we store the data if it were bigger than a byte? \(hint: take a look at the** [**EEPROMPut**](https://www.arduino.cc/en/Reference/EEPROMPut) **example\)**
 
+As I had mentioned above, we could split the data and save it to different memory addresses, and then make a list of where we've saved the data so when it's time to read it back, we know where to pull the data from. 
+
 **Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**
 
 {% embed url="https://youtu.be/ubDzC9D-o1s" %}
