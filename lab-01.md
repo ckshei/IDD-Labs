@@ -82,13 +82,13 @@ If I wanted to prove to myself the LED was actually blinking, I could include so
 
 Code: [https://github.com/ckshei/IDD-Labs/blob/master/lab-1/Custom\_Blink.ino](https://github.com/ckshei/IDD-Labs/blob/master/lab-1/Custom_Blink.ino)
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%284%29.png)
 
 ### 2. Blink your LED
 
 Now modify the circuit and program so that you can blink an external LED on pin 9.
 
-![](.gitbook/assets/image%20%282%29.png)
+![](.gitbook/assets/image%20%281%29.png)
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
@@ -98,7 +98,7 @@ Now modify the circuit and program so that you can blink an external LED on pin 
 
 Set up the following circuit, and try making the LED glow brighter and dimmer.
 
-![](.gitbook/assets/image%20%283%29.png)
+![](.gitbook/assets/image%20%285%29.png)
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
 
@@ -138,7 +138,7 @@ Hacking an Amazon Echo Remote
 
 ### 1. Take apart your electronic device, and draw a schematic of what is inside.
 
-![](.gitbook/assets/image%20%284%29.png)
+![](.gitbook/assets/image%20%283%29.png)
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
 

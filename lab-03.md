@@ -54,11 +54,15 @@ photocell + force sensor - log
 
 **a. Include your accelerometer read-out code in your write-up.**
 
-\*\*\*\*
+**Code:** [**https://github.com/ckshei/IDD-Labs/blob/master/lab-3/LED.ino**](https://github.com/ckshei/IDD-Labs/blob/master/lab-3/LED.ino)\*\*\*\*
+
+\*\*\*\*[**https://youtu.be/i9dvpL1\_z9Q**](https://youtu.be/i9dvpL1_z9Q)\*\*\*\*
 
 ## Optional. Graphic Display
 
 **Take a picture of your screen working insert it here!**
+
+![](.gitbook/assets/image%20%282%29.png)
 
 ## Part D. Logging values to the EEPROM and reading them back
 
