@@ -8,7 +8,11 @@ To submit your lab, clone [this repository](https://github.com/FAR-Lab/IDD-Fa18-
 
 ## Part A. Actuating DC motors
 
-**Video:** [**https://www.youtube.com/watch?v=\_vpZyFdfBZs**](https://www.youtube.com/watch?v=_vpZyFdfBZs)\*\*\*\*
+**Video:** 
+
+{% embed url="https://www.youtube.com/watch?v=\_vpZyFdfBZs" %}
+
+\*\*\*\*
 
 ## Part B. Actuating Servo motors
 
@@ -41,6 +45,10 @@ Pin 9
 
 **Include a photo/movie of your raw circuit in action.**
 
+{% embed url="https://www.youtube.com/watch?v=p8K216eLOR8" %}
+
+**Code:** [**https://github.com/ckshei/IDD-Labs/blob/master/lab-4/Potentiometer\_sensor.ino**](https://github.com/ckshei/IDD-Labs/blob/master/lab-4/Potentiometer_sensor.ino)\*\*\*\*
+
 ## Part D. Paper puppet
 
 **a. Make a video of your proto puppet.**
@@ -50,4 +58,12 @@ Pin 9
 ## Part E. Make it your own
 
 **a. Make a video of your final design.**
+
+{% embed url="https://www.youtube.com/watch?v=3YTiKoLsf6E" %}
+
+**Video of a miner who gets more tired as he continues to mine**
+
+**Code:** [**https://github.com/ckshei/IDD-Labs/blob/master/lab-4/miner.ino**](https://github.com/ckshei/IDD-Labs/blob/master/lab-4/miner.ino)\*\*\*\*
+
+\*\*\*\*
 
