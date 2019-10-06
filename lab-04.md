@@ -53,7 +53,9 @@ Pin 9
 
 **a. Make a video of your proto puppet.**
 
-\*\*\*\*[**https://www.youtube.com/watch?v=LQ4L\_Ktovmg**](https://www.youtube.com/watch?v=LQ4L_Ktovmg)\*\*\*\*
+{% embed url="https://www.youtube.com/watch?v=LQ4L\_Ktovmg" %}
+
+\*\*\*\*
 
 ## Part E. Make it your own
 
