@@ -64,9 +64,9 @@ photocell + force sensor - log
 
 **Take a picture of your screen working insert it here!**
 
-![](.gitbook/assets/image%20%285%29.png)
-
 ![](.gitbook/assets/image%20%286%29.png)
+
+![](.gitbook/assets/image%20%287%29.png)
 
 Code: [https://github.com/ckshei/IDD-Labs/blob/master/lab-3/LED\_DIsplay.ino](https://github.com/ckshei/IDD-Labs/blob/master/lab-3/LED_DIsplay.ino)
 
@@ -78,7 +78,7 @@ Code: [https://github.com/ckshei/IDD-Labs/blob/master/lab-3/LED\_DIsplay.ino](ht
 
 Yes, the way we have it coded, there is no way to go from state 0 to state 2, and vice versa. 
 
-![](.gitbook/assets/image%20%2812%29.png)
+![](.gitbook/assets/image%20%2814%29.png)
 
 So it wouldn't make much sense if we were to make read and write on opposite ends \(i.e. State 1, and State 3\) because the middle state would be clear and we would always be clearing any data we wrote and would not be able to read it.
 
@@ -110,7 +110,7 @@ As I had mentioned above, we could split the data and save it to different memor
 
 **a. Insert here a copy of your final state diagram.**
 
-![](.gitbook/assets/image%20%282%29.png)
+![](.gitbook/assets/image%20%283%29.png)
 
 ### 3. Create your data logger!
 

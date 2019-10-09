@@ -71,3 +71,17 @@ For your write up, include: 1. Your Arduino code. 2. .stl or .svg files for your
 
 1. A video of your box in action.
 
+Code: [https://github.com/ckshei/IDD-Labs/blob/master/lab-5/JackInABox.ino](https://github.com/ckshei/IDD-Labs/blob/master/lab-5/JackInABox.ino)
+
+STL File: [https://github.com/ckshei/IDD-Labs/blob/master/lab-5/rosa\_da\_mami.stl](https://github.com/ckshei/IDD-Labs/blob/master/lab-5/rosa_da_mami.stl)
+
+Picture: 
+
+![](.gitbook/assets/image%20%281%29.png)
+
+{% embed url="https://youtu.be/QXZQfqtmr2s" %}
+
+
+
+
+
